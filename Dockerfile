@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 LABEL maintainer="kaichanh@gmail.com"
 
-RUN apt-get -qq update && apt-get install -y wget perl make \
+RUN apt-get -qq update && apt-get install -y wget perl make git \
     texlive texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra texlive-science texlive-humanities pdftk curl \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
