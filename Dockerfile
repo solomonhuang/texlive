@@ -7,9 +7,9 @@ RUN apt-get -qq update && apt-get install -y wget perl make git \
 
 RUN adduser --disabled-password --gecos texlive texlive
 
-VOLUME [ "/home/texlive/doc" ]
+#VOLUME [ "/home/texlive/doc" ]
 
-WORKDIR /home/texlive/doc
+#WORKDIR /home/texlive/doc
 USER texlive
 
 #ENTRYPOINT [ "/bin/bash", "-l", "-c" ]
