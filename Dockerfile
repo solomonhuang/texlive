@@ -12,5 +12,5 @@ VOLUME [ "/home/texlive/doc" ]
 WORKDIR /home/texlive/doc
 USER texlive
 
-ENTRYPOINT [ "/bin/bash", "-l", "-c" ]
+#ENTRYPOINT [ "/bin/bash", "-l", "-c" ]
 
